@@ -57,7 +57,7 @@ function GrillaGenerica<T extends Base>({ entidadPrevia, entidadBase, apiServici
     setLabels((entidadBase as any).constructor.labels as string[]);
   }, [entidadBase]);
 
-  const handleChangePage = (event: unknown, newPage: number) => {
+  const handleChangePage = (_event: unknown, newPage: number) => {
     setPage(newPage);
   };
 

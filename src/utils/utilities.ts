@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
 
-import Swal from 'sweetalert2';
+//import Swal from 'sweetalert2';
 import BackendClient from '../servicios/BackendClient';
 /**
  * Función para manejar la eliminación genérica de un elemento.
@@ -14,19 +14,19 @@ import BackendClient from '../servicios/BackendClient';
  * @param url URL de la API donde se encuentra el recurso a eliminar.
  */
 export const handleDelete = async <T>(
-  index: number,
+  _index: number,
   _backendService: BackendClient<T>,
-  filteredData: any[],
+  _filteredData: any[],
   _fetchItems: () => void,
-  confirmationMessage: string = '¿Estás seguro de eliminar este elemento?',
+  _confirmationMessage: string = '¿Estás seguro de eliminar este elemento?',
   _successMessage: string = 'Elemento eliminado correctamente.',
   _errorMessage: string = 'Hubo un problema al eliminar el elemento.',
   _url: string
 ) => {
-  const _itemToDelete = filteredData[index];
+  //const _itemToDelete = filteredData[index];
  // const itemId = itemToDelete.id.toString(); // Convertimos el ID a string
 
-  const result = await Swal.fire({
+  /*const result = await Swal.fire({
     title: '¿Estás seguro?',
     text: confirmationMessage,
     icon: 'warning',
@@ -35,7 +35,7 @@ export const handleDelete = async <T>(
     cancelButtonColor: '#d33',
     confirmButtonText: 'Sí, eliminar',
     cancelButtonText: 'Cancelar'
-  });
+  }); */
 
   // if (result.isConfirmed) {
   // await backendService.delete(url,itemId);

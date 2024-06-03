@@ -5,7 +5,7 @@ import BasePie from "./BasePie";
 //import BaseBar from "./BaseBar";
 import AllBar from "./AllBar";
 import * as React from 'react';
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 // Contenido para las tarjetas de inicio
 const ProductoContent = {
@@ -14,11 +14,11 @@ const ProductoContent = {
     content: 'Añade nuevos platos o actualiza los precios para mejorar la experiencia de tus clientes.',
 };
 
-const empresasContent = {
+/*const empresasContent = {
     url: './logo/empresa.png',
     title: 'Empresas',
     content: 'Agrega, actualiza o elimina información sobre tus empresas asociadas.'
-};
+}; */
 
 const promocionesContent = {
     url: './logo/promo.png',

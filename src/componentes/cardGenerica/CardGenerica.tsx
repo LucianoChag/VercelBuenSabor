@@ -24,7 +24,7 @@ function CardGenerica<T extends Base>({
   entidadBase,
   apiServicio,
   listaSelects = {},
-  sinNuevo = false,
+  //sinNuevo = false,
   sinEditar = false,
 }: ListArgs<T>) {
   const [entidad, setEntidad] = useState<T>(entidadPrevia);

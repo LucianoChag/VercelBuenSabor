@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//import { useState } from "react";
 import Inicio from "../screens/inicio/Inicio";
 import Manufacturados from "../screens/manufacturados/Manufacturados";
-import Empresa from "../screens/empresas/Empresas";
+//import Empresa from "../screens/empresas/Empresas";
 import Insumo from "../screens/insumos/Insumos";
 import UnidadMedida from "../screens/UnidadMedida/UnidadMedidaForm";
 import Categoria from "../screens/categorias/Categorias";
@@ -15,7 +15,7 @@ import Empresas from "../screens/empresas/Empresas";
 
 const AppRouter: React.FC = () => {
   // Estado para almacenar el idEmpresa
-  const [idEmpresa, setIdEmpresa] = useState<number | null>();
+  //const [idEmpresa, setIdEmpresa] = useState<number | null>();
 
   return (
     <Router>

@@ -1,7 +1,7 @@
 import { ChangeEvent, useCallback, RefObject } from 'react';
 import BackendClient from "../../servicios/BackendClient";
 import Base from '../../entidades/Base';
-import ArticuloInsumo from '../../entidades/ArticuloInsumo';
+//*import ArticuloInsumo from '../../entidades/ArticuloInsumo';
 
 export type UseGrillaHandlersProps<T> = {
   entidad: T,
@@ -27,7 +27,7 @@ function useGrillaHandlers<T extends Base>({
   modalRef
 }: UseGrillaHandlersProps<T>) {
 
-  const cleanArticuloInsumo = (articuloInsumo: ArticuloInsumo): any => {
+  /*const cleanArticuloInsumo = (articuloInsumo: ArticuloInsumo): any => {
     const { type, ...cleanedArticuloInsumo } = articuloInsumo;
     return cleanedArticuloInsumo;
   };
@@ -39,7 +39,7 @@ function useGrillaHandlers<T extends Base>({
       }
       return detalle;
     });
-  };
+  };*/
 
   const cleanData = (data: any): any => {
     // Crear una copia profunda del objeto

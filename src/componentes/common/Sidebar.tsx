@@ -1,10 +1,9 @@
 import React from "react";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   cilBalanceScale,
   cilBarChart,
   cilBuilding,
-  cilCart,
   cilFastfood,
   cilPeople,
 } from "@coreui/icons";
@@ -21,14 +20,14 @@ import { cilDollar } from "@coreui/icons";
 
 const Sidebar: React.FC = () => {
   const location = useLocation();
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   // Obtener el idEmpresa de la URL
   const urlParts = location.pathname.split("/");
   const empresaId = urlParts[urlParts.length - 1];
-  const handleTabChange = (section: string) => {
+  /*const handleTabChange = (section: string) => {
     navigate(`/${section}/empresas/${empresaId}`);
-  };
+  };*/
 
   const shouldShowSidebar = !["/"].includes(location.pathname);
 
